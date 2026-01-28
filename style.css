@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contener{
+    margin: 60px;   
+    font-family: 'Rethink Sans';
+    font-style: normal;
+    font-size: 16px;
+}
+.main-header .main-title{
+    font-size: 45px;
+    font-weight: 900;
+    color: #2B2A29;
+}
+
+.main-header{
+    height: 220px;
+    width: 750px;
+    margin-bottom: 80px;
+}
+
+.main-VILAMOURA{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.VILAMOURA-inform{
+    width: 50%;
+    padding-right: 50px;
+    padding-right: 280px;
+
+}
+.VILAMOURA-inform_title{
+    margin-bottom: 40px;
+}
+.VILAMOURA-subtitle{
+    margin-bottom: 10px;
+}
+.main-VILAMOURA .main-title{
+    font-weight: 900;
+}
+.VILAMOURA-inform_btn{
+    margin-bottom: 100px;
+    /* width: 60%; */
+}
+.VILAMOURA-inform_btn .light-btn{
+    border: 2px solid #0A507A;
+    color: #0A507A;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 10px 0 0;
+
+}
+.VILAMOURA-text{
+    color: #2B2A29;
+    display: inline-block;
+    margin-bottom: 20px;
+
+}
+.VILAMOURA-img{
+    width: 50%;
+    height: auto;
+}
+
+.VILAMOURA-img img{
+   width: auto;
+   height: 550px;
+}
+.main-VILAMOURA{
+    margin-bottom: 100px;
+}
+
+
+
+.image-button:hover {
+  background-color: #0056b3;
+}
