@@ -44,10 +44,16 @@ ul {
 /* Header */
 
 .header {
-    background-image: url(./images/header_background.png);
+    background-image: url(./images/header_background_2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    background-position: center;
+    
+    min-height: 100vh;
+
+    margin-bottom: 100px;
+
+
 }
 
 .header__nav {
@@ -55,7 +61,8 @@ ul {
     justify-content: space-between;
     align-items: center;
 
-    padding: 60px 0;
+    padding: 30px 0;
+    color: #0A507A;
 }
 
 .header__nav-list {
@@ -67,27 +74,30 @@ ul {
     font-size: 25px;
 }
 
-.header__btn {
+.header__phone {
     font-size: 25px;
     padding: 10px 20px;
     background-color: #0A507A;
     border: 1px solid #0A507A;
     border-radius: 50px;           
-    color: #fff;
-    font-weight: bold;
+
 
     display: flex;
-     
+    gap: 5px;
 }
 
-.header__btn::before {
-    content: url(./images/header_phone.svg);
-    padding-left: 10px; 
+.header__btn {
+    color: #fff;
+    font-weight: bold;
 }
 
 .header__title {
     text-transform: uppercase;
     font-size: 140px;
+    color: #2B2A29;
+
+    position: relative;
+    z-index: -1;
 }
 
 .header__offer {
