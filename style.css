@@ -62,10 +62,14 @@ ul {
     display: flex;
     gap: 25px;
     font-weight: 700;
-    color: #0A507A;
 
     font-size: 25px;
 }
+.header__nav-item a {
+    color: #0A507A;
+
+}
+
 
 .header__btn {
     font-size: 25px;
@@ -238,6 +242,18 @@ ul {
     margin: 5px 10px 0 0;
 
 }
+.VILAMOURA-inform_btn .light-btn{
+    border: 2px solid #0A507A;
+    color: #0A507A;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 10px 0 0;
+
+}
 .VILAMOURA-text{
     color: #2B2A29;
     display: inline-block;
@@ -245,7 +261,10 @@ ul {
 
 }
 .VILAMOURA-img{
-    width: 50%;
+    /* width: 50%; */
+    /* height: auto; */
+    display: block; 
+    width: 100%;
     height: auto;
 }
 
@@ -253,12 +272,21 @@ ul {
    width: auto;
    height: 550px;
 }
-
 .main-VILAMOURA{
     margin-bottom: 100px;
 }
+
+
 
 .image-button:hover {
   background-color: #0056b3;
 }
 
+
+.VILAMOURA-img .btn__activities{
+    align-items: flex-end;
+    position: absolute; /* Позволяет двигать кнопку внутри контейнера */
+    bottom: 20px;       /* Расстояние от нижнего края */
+    left: 50%;          /* Центрируем по горизонтали */
+    transform: translateX(-50%);
+}
