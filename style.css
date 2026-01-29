@@ -23,7 +23,7 @@ ul {
     border-radius: 50px;           
     color: #fff;
     font-weight: bold;
-
+    margin-top: 20px;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -41,6 +41,22 @@ ul {
     text-transform: uppercase;
 }
 
+.global-subtitle{
+    margin-bottom: 10px;
+}
+
+.global-describe-text{
+    color: #2B2A29;
+    display: inline-block;
+    margin-bottom: 20px;
+
+}
+.main-title{
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #2B2A29;
+}
 /* Header */
 
 .header {
@@ -189,48 +205,43 @@ ul {
     margin: 5px;
 }
 
-
-/* Main */
-.main-header .main-title{
+/* =========================
+   MAIN
+========================= */
+.main-header {
     font-size: 45px;
     font-weight: 900;
     color: #2B2A29;
-}
-
-.main-header{
     height: 220px;
     width: 750px;
     margin-bottom: 80px;
 }
 
 
-/* VILAMOURA */
-.main-VILAMOURA{
+/* =========================
+   VILAMOURA SECTION
+========================= */
+.main-VILAMOURA {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
 }
 
-.VILAMOURA-inform{
+.VILAMOURA-inform {
     width: 50%;
-    padding-right: 50px;
     padding-right: 280px;
-
 }
-.VILAMOURA-inform_title{
+
+.VILAMOURA-inform_title {
     margin-bottom: 40px;
 }
-.VILAMOURA-subtitle{
-    margin-bottom: 10px;
-}
-.main-VILAMOURA .main-title{
-    font-weight: 900;
-}
-.VILAMOURA-inform_btn{
+
+.VILAMOURA-inform_btn {
     margin-bottom: 100px;
-    /* width: 60%; */
 }
-.VILAMOURA-inform_btn .light-btn{
+
+.VILAMOURA-inform_btn .light-btn {
     border: 2px solid #0A507A;
     color: #0A507A;
     padding: 8px 16px;
@@ -240,53 +251,89 @@ ul {
     text-decoration: none;
     display: inline-block;
     margin: 5px 10px 0 0;
-
 }
-.VILAMOURA-inform_btn .light-btn{
-    border: 2px solid #0A507A;
-    color: #0A507A;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-family: sans-serif;
-    font-size: 14px;
-    text-decoration: none;
+
+.VILAMOURA-img {
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+.VILAMOURA-img img {
+    height: 700px;
+}
+
+.VILAMOURA-img .btn__activities {
+    position: absolute;
+    bottom: 20px;
+    left: 80%;
+    transform: translateX(-50%);
+}
+
+
+/* =========================
+   ACTIVITIES
+========================= */
+.activities_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.activities-describe {
+    display: block;
+}
+
+.activities-describe .global-describe-text {
+    margin-bottom: 30px;
+}
+
+.activities-title .main-title {
     display: inline-block;
-    margin: 5px 10px 0 0;
-
+    width: 730px;
 }
-.VILAMOURA-text{
-    color: #2B2A29;
-    display: inline-block;
-    margin-bottom: 20px;
 
+.circles-wrapper {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 80px;
 }
-.VILAMOURA-img{
-    /* width: 50%; */
-    /* height: auto; */
-    display: block; 
+
+.circle-item {
+    width: 500%;
+    height: 250px;
+    border: 1px solid #333;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: -5px;
+}
+
+.activities-img {
     width: 100%;
     height: auto;
-}
-
-.VILAMOURA-img img{
-   width: auto;
-   height: 550px;
-}
-.main-VILAMOURA{
     margin-bottom: 100px;
 }
 
 
-
+/* =========================
+   BUTTON HOVER
+========================= */
 .image-button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
+.SUPERVARZNO {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  color: #333; /* или contain, если важно сохранить всё изображение */
+}
 
-.VILAMOURA-img .btn__activities{
-    align-items: flex-end;
-    position: absolute; /* Позволяет двигать кнопку внутри контейнера */
-    bottom: 20px;       /* Расстояние от нижнего края */
-    left: 50%;          /* Центрируем по горизонтали */
-    transform: translateX(-50%);
+.SUPERVARZNO {
+  width: 70%;
+  height: 70%;
 }
